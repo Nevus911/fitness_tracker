@@ -66,7 +66,7 @@ func DayActionInfo(data string, weight, height float64) string {
 		}
 		// дистанция в метрах
 		distM = float64(numberOfSteps)*stepLength
-		// перевод дистанции в километры
+		// перевод дистанции в километры 
 		distKm = distM/mInKm
 	// возвращаем из spentcalories.WalkingSpentCalories количество ккал
 	kKal, _ := spentcalories.WalkingSpentCalories(numberOfSteps, weight, height, walkingTime)

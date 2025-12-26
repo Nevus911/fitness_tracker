@@ -151,7 +151,7 @@ func WalkingSpentCalories(steps int, weight, height float64, duration time.Durat
 	if duration <= 0 {
 		return 0, errDuration
 	}
-	// расчет калорий при беге
+	// расчет калорий при беге 
 	averageSpeed := meanSpeed(steps, height, duration)
 	durationInMinutes := duration.Minutes()
 	walkSpentcalories := ((weight * averageSpeed * durationInMinutes) / minInH)*walkingCaloriesCoefficient
